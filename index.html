@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>portfolio &mdash; Tailwind</title>
+  </head>
+  <body class="relative">
+    <!-- Global Container -->
+    <main class="bg-dark md:px-28 sm:px-10 px-5 py-5 font-serif">
+      <!-- HEADER & ABOUT  SECTION -->
+      <section class="border-b-2 border-stroke">
+        <!-- navbar -->
+        <nav
+          class="flex sm:flex-row sm:justify-between flex-col items-center gap-y-8 text-center"
+        >
+          <!-- Author Name -->
+          <p class="text-white font-bold">Adamkeys</p>
+          <!-- LOGO'S -->
+          <div class="flex gap-x-7 z-10">
+            <a href="#"
+              ><img src="images/icon-github.svg" alt="icon-github"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/icon-frontend-mentor.svg"
+                alt="icon-frontend-mentor"
+            /></a>
+            <a href="#"
+              ><img src="images/icon-linkedin.svg" alt="icon-linkedin"
+            /></a>
+            <a href="#"
+              ><img src="images/icon-twitter.svg" alt="icon-twitter"
+            /></a>
+          </div>
+        </nav>
+
+        <!-- profile image desktop -->
+        <img
+          src="images/image-profile-desktop.webp"
+          class="hidden md:block w-[450px] h-[600px] absolute right-16 opacity-90 top-0"
+          alt="image-profile-desktop"
+        />
+        <!-- Profile Image MD screens  -->
+        <img
+          src="images/image-profile-tablet.webp"
+          class="md:hidden absolute right-0 top-0 opacity-90 h-[500px] w-[300px] hidden sm:block"
+          alt="image-profile-tablet"
+        />
+        <!-- Profile Image Mobile -->
+        <img
+          src="images/image-profile-mobile.webp"
+          class="sm:hidden block mx-auto h-[500px]"
+          alt="image-profile-mobile"
+        />
+
+        <!-- ABOUT CONTENT  -->
+        <div
+          class="flex flex-col h-[400px] gap-y-10 md:h-[540px] md:w-7/12 sm:w-2/3 mt-20 mx-auto sm:mx-0 justify-center items-center text-center sm:text-start sm:items-start sm:justify-start"
+        >
+          <!-- AURTHOR NAME -->
+          <h1
+            class="md:text-7xl mobile:text-5xl text-4xl text-white font-semibold"
+          >
+            Nice to meet you! I'm
+            <span
+              class="decoration-4 underline underline-offset-15 decoration-cyanish"
+              >Adam Keyes.</span
+            >
+          </h1>
+          <!-- DESCRIPTION -->
+          <p class="text-white w-3/5">
+            Based in the UK, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
+          <a
+            href="#form"
+            class="text-white underline decoration-2 underline-offset-8 uppercase font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish mb-8"
+            >Contact me</a
+          >
+        </div>
+      </section>
+
+      <!-- Feature Section Container GRID -->
+      <section
+        class="grid md:grid-cols-3 gap-y-10 sm:gap-x-5 sm:gap-y-14 sm:grid-cols-2 py-16 border-b-2 border-stroke sm:border-none"
+      >
+        <div class="sm:text-start text-center flex flex-col gap-y-2 sm:gap-y-4">
+          <h1 class="text-white text-3xl font-semibold">HTML</h1>
+          <p class="text-lightgrey">4 Years Experience</p>
+        </div>
+
+        <div class="sm:text-start text-center flex flex-col gap-y-2 sm:gap-y-4">
+          <h1 class="text-white text-3xl font-semibold">CSS</h1>
+          <p class="text-lightgrey">4 Years Experience</p>
+        </div>
+
+        <div class="sm:text-start text-center flex flex-col gap-y-2 sm:gap-y-4">
+          <h1 class="text-white text-3xl font-semibold">Javascript</h1>
+          <p class="text-lightgrey">4 Years Experience</p>
+        </div>
+
+        <div class="sm:text-start text-center flex flex-col gap-y-2 sm:gap-y-4">
+          <h1 class="text-white text-3xl font-semibold">Accessibility</h1>
+          <p class="text-lightgrey">4 Years Experience</p>
+        </div>
+
+        <div class="sm:text-start text-center flex flex-col gap-y-2 sm:gap-y-4">
+          <h1 class="text-white text-3xl font-semibold">React</h1>
+          <p class="text-lightgrey">4 Years Experience</p>
+        </div>
+
+        <div class="sm:text-start text-center flex flex-col gap-y-2 sm:gap-y-4">
+          <h1 class="text-white text-3xl font-semibold">Sass</h1>
+          <p class="text-lightgrey">4 Years Experience</p>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+      <section class="py-16">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-16">
+          <h1 class="md:text-7xl sm:text-6xl text-3xl text-white font-semibold">
+            Projects
+          </h1>
+          <a
+            href="#form"
+            class="text-white underline decoration-2 underline-offset-8 uppercase font-semibold tracking-widest decoration-cyanish hover:text-cyanish duration-200"
+            >Contact me</a
+          >
+        </div>
+
+        <!-- Grid -->
+        <div class="grid sm:grid-cols-2 grid-cols-1 gap-y-16 gap-x-10">
+          <!-- col 1 -->
+          <div class="flex flex-col gap-y-3">
+            <img
+              src="images/thumbnail-project-1-small.webp"
+              class="mb-1"
+              alt="Project-porfolio-tumbnail"
+            />
+            <h1 class="font-semibold text-xl text-white">DESIGN PORTFOLIO</h1>
+            <p class="font-light text-lightgrey uppercase word-spacing">
+              html css
+            </p>
+            <div class="flex gap-x-10 uppercase">
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest decoration-cyanish hover:text-cyanish duration-200"
+                >VIEW PROJECT</a
+              >
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest decoration-cyanish hover:text-cyanish duration-200"
+                >VIEW CODE</a
+              >
+            </div>
+          </div>
+
+          <!-- col 2 -->
+          <div class="flex flex-col gap-y-3">
+            <img
+              src="images/thumbnail-project-2-small.webp"
+              class="mb-1"
+              alt="Project-E-learning-tumbnail"
+            />
+            <h1 class="font-semibold text-xl text-white">
+              E-LEARNING LANDING PAGE
+            </h1>
+            <p class="font-light text-lightgrey uppercase word-spacing">
+              html css
+            </p>
+            <div class="flex gap-x-10 uppercase">
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW PROJECT</a
+              >
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW CODE</a
+              >
+            </div>
+          </div>
+
+          <!-- col 3 -->
+          <div class="flex flex-col gap-y-3">
+            <img
+              src="images/thumbnail-project-3-small.webp"
+              class="mb-1"
+              alt="Project-TODO-tumbnail"
+            />
+            <h1 class="font-semibold text-xl text-white">TODO WEB APP</h1>
+            <p class="word-spacing font-light text-lightgrey uppercase">
+              html css Javascript
+            </p>
+
+            <div class="flex gap-x-10 uppercase">
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW PROJECT</a
+              >
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW CODE</a
+              >
+            </div>
+          </div>
+
+          <!-- col 4 -->
+          <div class="flex flex-col gap-y-3">
+            <img
+              src="images/thumbnail-project-4-small.webp"
+              class="mb-1"
+              alt="Project-ENTERTAINMENT WEB APP-tumbnail"
+            />
+            <h1 class="font-semibold text-xl text-white">
+              ENTERTAINMENT WEB APP
+            </h1>
+            <p class="word-spacing font-light text-lightgrey uppercase">
+              html css Javascript
+            </p>
+            <div class="flex gap-x-10 uppercase">
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW PROJECT</a
+              >
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW CODE</a
+              >
+            </div>
+          </div>
+
+          <!-- col 5 -->
+          <div class="flex flex-col gap-y-3">
+            <img
+              src="images/thumbnail-project-5-small.webp"
+              class="mb-1"
+              alt="Project-MEMORY GAME-tumbnail"
+            />
+            <h1 class="font-semibold text-xl text-white">MEMORY GAME</h1>
+            <p class="word-spacing font-light text-lightgrey uppercase">
+              html css Javascript
+            </p>
+            <div class="flex gap-x-10 uppercase">
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW PROJECT</a
+              >
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW CODE</a
+              >
+            </div>
+          </div>
+
+          <!-- col 6 -->
+          <div class="flex flex-col gap-y-3">
+            <img
+              src="images/thumbnail-project-4-small.webp"
+              class="mb-1"
+              alt="Project-ART GALLERY SHOWCASE-tumbnail"
+            />
+            <h1 class="font-semibold text-xl text-white">
+              ART GALLERY SHOWCASE
+            </h1>
+            <p class="word-spacing font-light text-lightgrey uppercase">
+              html css Javascript
+            </p>
+            <div class="flex gap-x-10 uppercase">
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW PROJECT</a
+              >
+              <a
+                href="#"
+                class="text-white underline decoration-2 underline-offset-8 text-sm md:text-base md:font-semibold tracking-widest hover:text-cyanish duration-200 decoration-cyanish"
+                >VIEW CODE</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-darkgrey md:px-28 sm:px-10 px-5 py-16 font-serif">
+      <!-- CTA Grid Container -->
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 border-b gap-y-10 border-stroke pb-28"
+      >
+        <!-- CONTACT GRID COL 1  -->
+        <div
+          class="flex flex-col text-center items-center md:items-start md:text-start gap-y-6 mt-7"
+        >
+          <h1 class="md:text-7xl sm:text-6xl text-5xl text-white font-semibold">
+            Contact
+          </h1>
+          <p class="text-white text-opacity-70 w-3/4 md:text-base text-sm">
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I'll get back to you as soon as possible.
+          </p>
+        </div>
+
+        <!-- CTA FORM -->
+        <div class="flex flex-col">
+          <form netlify class="space-y-5" id="form">
+            <!-- INPUT DIV 1 -->
+            <div>
+              <input
+                type="text"
+                class="border-b border-stroke outline-none bg-inherit text-white py-5 w-full"
+                placeholder="NAME"
+                required
+              />
+            </div>
+            <!-- INPUT DIV 2 -->
+            <div>
+              <input
+                type="email"
+                class="border-b border-stroke outline-none bg-inherit text-white py-5 w-full"
+                placeholder="EMAIL"
+                required
+              />
+            </div>
+            <!-- TEXT AREA -->
+            <div>
+              <textarea
+                type="text"
+                class="border-b border-stroke outline-none bg-inherit text-white py-5 w-full"
+                placeholder="MESSAGE"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <!-- SUBMIT BUTTON -->
+            <div class="ml-auto w-36">
+              <button
+                type="submit"
+                class="text-white underline decoration-2 underline-offset-8 sm:font-semibold tracking-widest decoration-cyanish hover:text-cyanish duration-200"
+              >
+                SEND MESSAGE
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER BOTTOM INFO SECTION -->
+      <section
+        class="flex pt-16 sm:flex-row sm:justify-between flex-col items-center gap-y-8 text-center"
+      >
+        <!-- AUTHOR Name -->
+        <a href="#">
+          <p class="text-white font-bold">Adamkeys</p>
+        </a>
+        <!-- LOGO's -->
+        <div class="flex gap-x-7 z-10">
+          <a href="#">
+            <img
+              src="images/icon-github.svg"
+              alt="icon-github"
+              class="duration-200 ficon"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/icon-frontend-mentor.svg"
+              alt="icon-frontend-mentor"
+              class="duration-200 ficon"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/icon-linkedin.svg"
+              alt="icon-linkedin"
+              class="duration-200 ficon"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/icon-twitter.svg"
+              alt="icon-twitter"
+              class="duration-200 ficon"
+          /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
